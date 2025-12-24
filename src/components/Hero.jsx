@@ -19,7 +19,7 @@ export default function Hero() {
     >
       <div className="max-w-6xl mx-auto w-full min-h-screen flex">
         {/* Optical centering wrapper */}
-        <div className="max-w-4xl w-full pt-[30vh]">
+        <div className="max-w-4xl w-full pt-[26vh] sm:pt-[26vh] md:pt-[30vh]">
           {/* Name */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -30,7 +30,9 @@ export default function Hero() {
               ease: [0.22, 1, 0.36, 1],
             }}
             className="
-              text-7xl
+              text-5xl
+              md:text-7xl
+              lg:text-7xl
               font-bold
               tracking-tight
               text-primary

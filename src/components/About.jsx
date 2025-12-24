@@ -34,7 +34,7 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-20 items-center">
           {/* Image */}
-          <motion.div
+ <motion.div
             initial={{ opacity: 0, clipPath: 'inset(0 0 100% 0)' }}
             whileInView={{ opacity: 1, clipPath: 'inset(0 0 0% 0)' }}
             viewport={{ once: true }}
@@ -48,12 +48,13 @@ export default function About() {
               whileHover={{ scale: 1.035 }}
             />
 
-            {/* subtle frame */}
+            {/* subtle depth frame */}
             <div className="absolute inset-0 rounded-2xl ring-1 ring-black/5 pointer-events-none" />
 
-            {/* cinematic gradient */}
+            {/* optional cinematic gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent pointer-events-none" />
           </motion.div>
+
 
           {/* Split Narrative */}
           <motion.div
