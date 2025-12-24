@@ -50,9 +50,11 @@ export default function Achievements() {
 
             <div className="flex flex-wrap gap-3 max-w-3xl">
               {[
+                "Excel",
                 "Business Analytics",
                 "Marketing Strategy",
                 "Public Speaking",
+                "Presentations",
                 "Entrepreneurial Thinking",
                 "Digital Tools",
                 "Leadership Communication",
@@ -76,8 +78,6 @@ export default function Achievements() {
 >
   {skill}
 </span>
-
-
               ))}
             </div>
           </div>

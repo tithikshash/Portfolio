@@ -27,7 +27,7 @@ export default function Contact() {
         {/* Social links */}
         <div className="space-y-8">
           <a
-            href="#"
+            href="https://www.linkedin.com/in/tithiksha-shripad-25748b388/"
             className="
               flex items-center gap-4
               text-xl

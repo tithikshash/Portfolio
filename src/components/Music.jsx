@@ -7,15 +7,17 @@ export default function Music() {
     <section id="music" className="py-32 px-6 bg-gray-50">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <h2 
-            className="text-4xl md:text-5xl font-semibold tracking-tight mb-6"
-            style={{
-                background: 'linear-gradient(to right, #337ae5 0%, #408fe5 10%, #d4734a 30%, #ea6b2e 60%, #ea6b2e 100%)',    WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-            }}
-            >
-            Music Journey
+        <h2
+          className="text-4xl md:text-5xl font-semibold tracking-tight mb-6"
+          style={{
+            background:
+              'linear-gradient(to right, #337ae5 0%, #408fe5 10%, #d4734a 30%, #ea6b2e 60%, #ea6b2e 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+          }}
+        >
+          Music Journey
         </h2>
 
         <p className="text-gray-600 text-lg max-w-2xl mb-24">
@@ -24,16 +26,34 @@ export default function Music() {
           classical and contemporary styles.
         </p>
 
-        {/* Timeline wrapper */}
+        {/* Timeline */}
         <div className="relative">
-          {/* Center vertical line */}
-          <div className="absolute left-1/2 top-0 h-full w-px bg-gray-200 -translate-x-1/2" />
+          {/* Vertical line */}
+          <div
+            className="
+              absolute top-0 h-full w-px bg-gray-200
+              left-4
+              md:left-1/2 md:-translate-x-1/2
+            "
+          />
 
           <div className="space-y-32">
             {/* Phase 1 */}
-            <div className="relative grid md:grid-cols-2 gap-16 items-center">
+            <div
+              className="
+                relative grid gap-10
+                md:grid-cols-2 md:gap-16 items-center
+                pl-12 md:pl-0
+              "
+            >
               {/* Dot */}
-              <div className="absolute left-1/2 top-2 w-3 h-3 bg-[#337ae5] rounded-full -translate-x-1/2" />
+              <div
+                className="
+                  absolute top-2 w-3 h-3 bg-[#337ae5] rounded-full
+                  left-4 -translate-x-1/2
+                  md:left-1/2 md:-translate-x-1/2
+                "
+              />
 
               {/* Text */}
               <div className="md:pr-16">
@@ -49,7 +69,7 @@ export default function Music() {
               </div>
 
               {/* Image */}
-              <div className="relative h-[360px] rounded-2xl overflow-hidden">
+              <div className="relative h-[320px] md:h-[360px] rounded-xl md:rounded-2xl overflow-hidden">
                 <img
                   src={performance1}
                   alt="Early music training"
@@ -59,12 +79,24 @@ export default function Music() {
             </div>
 
             {/* Phase 2 */}
-            <div className="relative grid md:grid-cols-2 gap-16 items-center">
+            <div
+              className="
+                relative grid gap-10
+                md:grid-cols-2 md:gap-16 items-center
+                pl-12 md:pl-0
+              "
+            >
               {/* Dot */}
-              <div className="absolute left-1/2 top-2 w-3 h-3 bg-[#337ae5] rounded-full -translate-x-1/2" />
+              <div
+                className="
+                  absolute top-2 w-3 h-3 bg-[#337ae5] rounded-full
+                  left-4 -translate-x-1/2
+                  md:left-1/2 md:-translate-x-1/2
+                "
+              />
 
               {/* Image */}
-              <div className="relative h-[360px] rounded-2xl overflow-hidden md:order-1">
+              <div className="relative h-[320px] md:h-[360px] rounded-xl md:rounded-2xl overflow-hidden md:order-1">
                 <img
                   src={performance2}
                   alt="Competition performance"
@@ -74,7 +106,9 @@ export default function Music() {
 
               {/* Text */}
               <div className="md:pl-16 md:order-2">
-                <p className="text-sm text-gray-500 mb-2">Competitive Stage</p>
+                <p className="text-sm text-gray-500 mb-2">
+                  Competitive Stage
+                </p>
                 <h3 className="text-2xl font-medium text-gray-900 mb-4">
                   Competitions & Recognition
                 </h3>
@@ -87,9 +121,21 @@ export default function Music() {
             </div>
 
             {/* Phase 3 */}
-            <div className="relative grid md:grid-cols-2 gap-16 items-center">
+            <div
+              className="
+                relative grid gap-10
+                md:grid-cols-2 md:gap-16 items-center
+                pl-12 md:pl-0
+              "
+            >
               {/* Dot */}
-              <div className="absolute left-1/2 top-2 w-3 h-3 bg-[#337ae5] rounded-full -translate-x-1/2" />
+              <div
+                className="
+                  absolute top-2 w-3 h-3 bg-[#337ae5] rounded-full
+                  left-4 -translate-x-1/2
+                  md:left-1/2 md:-translate-x-1/2
+                "
+              />
 
               {/* Text */}
               <div className="md:pr-16">
@@ -105,7 +151,7 @@ export default function Music() {
               </div>
 
               {/* Image */}
-              <div className="relative h-[360px] rounded-2xl overflow-hidden">
+              <div className="relative h-[320px] md:h-[360px] rounded-xl md:rounded-2xl overflow-hidden">
                 <img
                   src={performance3}
                   alt="Live performance"
